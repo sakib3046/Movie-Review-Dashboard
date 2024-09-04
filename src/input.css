@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply bg-[#012030] text-[#DAFDBA] ;
+    font-family: "Martian Mono", monospace;
+    text-shadow: 0px 0px 10px #9AEBA3;
+}
+body{
+    @apply px-[4rem];
+}
+
+@layer utilities{
+    .card_1{
+        @apply bg-primary/5 backdrop-blur-md rounded-lg border-primary/10 border-2 p-[2rem];       
+    }
+}
+
+
