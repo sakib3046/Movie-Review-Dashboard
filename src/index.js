@@ -14,7 +14,22 @@ function init() {
         },0)
         const avrgRating = (totalRating/totalReview).toFixed(2);
         
+
+        // Dom Manipulation
+        const totalMovieEl = document.getElementById("totalMovie");
+        addStat(totalMovieEl,totalMovie)
+        const totalReviewEl = document.getElementById("totalReview");
+        addStat(totalReviewEl,totalReview)
+        const avrgRatingEl = document.getElementById("avrgRating");
+        addStat(avrgRatingEl,avrgRating)
+        
     }
+}
+
+function addStat(element, value) {
+    const spanEl = document.createElement("h2");
+    spanEl.innerText = value;
+    element.appendChild(spanEl); 
 }
 
 init();
