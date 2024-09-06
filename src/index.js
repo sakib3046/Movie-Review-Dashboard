@@ -28,6 +28,7 @@ function init() {
 
 function addStat(element, value) {
     const spanEl = document.createElement("h2");
+    spanEl.classList.add("text-xl");
     spanEl.innerText = value;
     element.appendChild(spanEl); 
 }
